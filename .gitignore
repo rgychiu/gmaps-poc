@@ -1,0 +1,6 @@
+# API Key Credentials
+credentials.json
+
+# Pycharm Files
+.idea/
+.idea/vcs.xml
