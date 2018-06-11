@@ -15,7 +15,10 @@ places_endpoint = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/
 # Geolocation API
 
 # Geocoding API
-# Convert address into coordinates and coordinates (latitude, longitude) to address
+"""
+Convert address into coordinates and coordinates (latitude, longitude) to address
+Understanding response information at https://developers.google.com/maps/documentation/geocoding/intro#Results
+"""
 geocode_ex = gmaps.geocode('1600 Amphitheatre Parkway, Mountain View, CA')
 reverse_geocode_ex = gmaps.reverse_geocode((41.8789, -87.6359))
 print('------------------------------------ GEOCODING API -----------------------------------------')
