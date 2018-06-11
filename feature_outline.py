@@ -12,8 +12,6 @@ gmaps = googlemaps.Client(key=key)
 # APIs that require HTTP requests and endpoints
 places_endpoint = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json'
 
-# Geolocation API
-
 # Geocoding API
 """
 Convert address into coordinates and coordinates (latitude, longitude) to address
