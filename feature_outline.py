@@ -19,7 +19,7 @@ places_endpoint = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/
 geocode_ex = gmaps.geocode('1600 Amphitheatre Parkway, Mountain View, CA')
 reverse_geocode_ex = gmaps.reverse_geocode((41.8789, -87.6359))
 print('------------------------------------ GEOCODING API -----------------------------------------')
-print('Response example: ' + str(geocode_ex))
+print('Response example: ' + json.dumps(geocode_ex, indent=4, sort_keys=False))
 print('Geocode from address to coordinates: ' + str(geocode_ex[0]['formatted_address']))
 print('Geocode from coordinates to address: ' + str(reverse_geocode_ex[0]['formatted_address']))
 
