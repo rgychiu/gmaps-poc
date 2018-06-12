@@ -1,7 +1,7 @@
 # Google Maps POC
 Google Maps POC outlines the basic features of Google Maps through
 the Python client library for Maps Web Services. These examples
-focus on potentially useful APIs for retrieving location data,
+focus on potentially useful APIs for retrieving place data,
 including Geocoding API, Distance Matrix API, and
 Places API.
 
@@ -31,7 +31,9 @@ following JSON into the file:
     "api_key": YOUR_API_KEY_HERE
 }
 ```
-**_*Note that the API key also needs to be within double quotes_**
+**_*NOTE: that the API key also needs to be within double quotes.
+The file ```credentials.json``` is also included in the .gitignore.
+This is to ensure the secrecy of the API Key._**
 
 The repository should be all setup for use! Now you can enjoy the
 examples and modify them to your liking!
