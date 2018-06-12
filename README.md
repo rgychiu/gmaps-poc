@@ -45,7 +45,7 @@ searching and getting data through the Places API. The different
 APIs also work seamlessly together through using addresses as 
 search queries or ```place_ids```. This feature also means that
 GMaps is also able to interact with other APIs such as Yelp to
-extract further information. Extra tools are also included, such
+extract further information about a location. Extra tools are also included, such
 as the ability to calculate distance between two locations with
 the Distance Matrix API.
 
