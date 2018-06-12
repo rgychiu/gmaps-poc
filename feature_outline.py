@@ -22,7 +22,16 @@ print('Geocode from address to coordinates: ' + str(geocode_ex[0]['formatted_add
 print('Geocode from coordinates to address: ' + str(reverse_geocode_ex[0]['formatted_address']))
 
 # Distance Matrix API
-
+"""
+Get distance between two cities (San Antonio and Orlando) in both miles and kilometers.
+"""
+address_distance = gmaps.distance_matrix("San Antonio, TX", "Orlando, FL")
+address_dist_imperial = gmaps.distance_matrix("San Antonio, TX", "Orlando, FL", units="imperial")
+coord_distance = gmaps.distance_matrix((29.4241, 98.4936), (28.5383, 81.3792))
+print('------------------------------------ DISTANCE MATRIX API -----------------------------------------')
+print('Response example: ' + json.dumps(address_dist_imperial, indent=4, sort_keys=False))
+print('Distance in metric units: ' + address_distance['rows'][0]['elements'][0]['distance']['text'])
+print('Distance in imperial units: ' + address_dist_imperial['rows'][0]['elements'][0]['distance']['text'])
 
 # Places API
 """
