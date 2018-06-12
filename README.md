@@ -35,6 +35,12 @@ following JSON into the file:
 The file ```credentials.json``` is also included in the .gitignore.
 This is to ensure the secrecy of the API Key._**
 
+The examples also require the googlemaps module. In order to 
+import the module, type the following into the CLI:
+```
+pip install -U googlemaps
+```
+
 The repository should be all setup for use! Now you can enjoy the
 examples and modify them to your liking!
 
