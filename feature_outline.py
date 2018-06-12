@@ -33,6 +33,7 @@ Understanding response information at https://developers.google.com/maps/documen
 """
 geocode_ex = gmaps.geocode('1600 Amphitheatre Parkway, Mountain View, CA')
 reverse_geocode_ex = gmaps.reverse_geocode((41.8789, -87.6359))
+place_id_geocode = gmaps.geocode(place_search['results'][0]['place_id'])
 print('------------------------------------ GEOCODING API -----------------------------------------')
 print('Response example: ' + json.dumps(geocode_ex, indent=4, sort_keys=False))
 print('Geocode from address to coordinates: ' + str(geocode_ex[0]['formatted_address']))
@@ -46,7 +47,9 @@ Understanding response information at https://developers.google.com/maps/documen
 address_distance = gmaps.distance_matrix("San Antonio, TX", "Orlando, FL")
 address_dist_imperial = gmaps.distance_matrix("San Antonio, TX", "Orlando, FL", units="imperial")
 coord_distance = gmaps.distance_matrix((29.4241, 98.4936), (28.5383, 81.3792))
+place_id_dist = gmaps.distance_matrix('place_id:' + place_search['results'][0]['place_id'], 'place_id:' + geocode_ex[0]['place_id'])
 print('------------------------------------ DISTANCE MATRIX API -----------------------------------------')
 print('Response example: ' + json.dumps(address_dist_imperial, indent=4, sort_keys=False))
 print('Distance in metric units: ' + address_distance['rows'][0]['elements'][0]['distance']['text'])
 print('Distance in imperial units: ' + address_dist_imperial['rows'][0]['elements'][0]['distance']['text'])
+print('Place ID distance: ' + place_id_dist['rows'][0]['elements'][0]['distance']['text'])
