@@ -52,7 +52,10 @@ the Distance Matrix API.
 Nonetheless, each API comes with some drawbacks and biases
 including the region and viewport biases found in the Geocoding
 API. More information can be found in the documentation of each
-API.
+API. There are also cost considerations as Google API allows 1,000
+free requests per 24 hour period on an 'unverified' account and 
+150,000 free requests per day on a 'verified' account, where verified
+means that the account has enabled billing.
 
 ### Resources
 The examples included were derived based on the help found through
