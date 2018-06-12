@@ -33,7 +33,7 @@ following JSON into the file:
 ```
 **_*Note that the API key also needs to be within double quotes_**
 
-The repository should be all setup for use! Now you enjoy the
+The repository should be all setup for use! Now you can enjoy the
 examples and modify them to your liking!
 
 ### Additional Resources

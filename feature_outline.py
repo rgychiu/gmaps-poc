@@ -26,7 +26,7 @@ print('Geocode from coordinates to address: ' + str(reverse_geocode_ex[0]['forma
 
 # Places API
 """
-Seach for Shedd Aquarium and get all data available
+Search for Shedd Aquarium and get all data available
 Understanding response information at https://developers.google.com/places/web-service/intro
 """
 place_search = gmaps.places('Shedd Aquarium')
