@@ -38,9 +38,26 @@ This is to ensure the secrecy of the API Key._**
 The repository should be all setup for use! Now you can enjoy the
 examples and modify them to your liking!
 
-### Additional Resources
+### Additional Information
+The Google Maps Platform and Web Service provide many tools that
+aid in gathering information about different places, such as 
+searching and getting data through the Places API. The different
+APIs also work seamlessly together through using addresses as 
+search queries or ```place_ids```. This feature also means that
+GMaps is also able to interact with other APIs such as Yelp to
+extract further information. Extra tools are also included, such
+as the ability to calculate distance between two locations with
+the Distance Matrix API.
+
+Nonetheless, each API comes with some drawbacks and biases
+including the region and viewport biases found in the Geocoding
+API. More information can be found in the documentation of each
+API.
+
+### Resources
 The examples included were derived based on the help found through
 Google's documentation, found at the following links:
 * Geocoding API: https://developers.google.com/maps/documentation/geocoding/intro
 * Distance Matrix API: https://developers.google.com/maps/documentation/distance-matrix/intro
 * Places API: https://cloud.google.com/maps-platform/places/
+* Client Documentation: https://googlemaps.github.io/google-maps-services-python/docs/
