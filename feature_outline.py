@@ -1,6 +1,17 @@
 import googlemaps
 import json
 
+"""
+Python Client Library for Google Maps API Web Services
+basic use cases and code samples.
+
+This program demonstrates using the Places API, Geooding API, and
+Distance Matrix API to search for specific locations in a variety
+of different ways and find the distances between two locations.
+
+Additional Documentation can be found at: https://developers.google.com/maps/documentation/
+"""
+
 # Retrieve API Key from json file
 with open('credentials.json') as keyfile:
     data = json.load(keyfile)
